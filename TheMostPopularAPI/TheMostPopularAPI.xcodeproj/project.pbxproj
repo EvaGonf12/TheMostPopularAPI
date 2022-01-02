@@ -35,6 +35,9 @@
 		580D47B12781E122009C6E3A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47B02781E122009C6E3A /* APIService.swift */; };
 		580D47B32781E140009C6E3A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47B22781E140009C6E3A /* APIRequest.swift */; };
 		580D47B62781E16E009C6E3A /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47B52781E16E009C6E3A /* AppDIContainer.swift */; };
+		580D47B82781E1EF009C6E3A /* ArticlesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47B72781E1EF009C6E3A /* ArticlesAPI.swift */; };
+		580D47BC2781E203009C6E3A /* ArticlesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47BB2781E203009C6E3A /* ArticlesListRequest.swift */; };
+		580D47C02781E224009C6E3A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47BF2781E224009C6E3A /* Article.swift */; };
 		69380A9E287FD5C0E449F7F4 /* Pods_TheMostPopularAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5571A553B98898507E177288 /* Pods_TheMostPopularAPI.framework */; };
 		BC5B843B46AC085714A4F758 /* Pods_TheMostPopularAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E97F0A88D775072BC94CABF /* Pods_TheMostPopularAPITests.framework */; };
 		FD00D4BD0666F8688745B91C /* Pods_TheMostPopularAPI_TheMostPopularAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8CED242009CECAEBAB3C93 /* Pods_TheMostPopularAPI_TheMostPopularAPIUITests.framework */; };
@@ -95,6 +98,9 @@
 		580D47B02781E122009C6E3A /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		580D47B22781E140009C6E3A /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		580D47B52781E16E009C6E3A /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		580D47B72781E1EF009C6E3A /* ArticlesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPI.swift; sourceTree = "<group>"; };
+		580D47BB2781E203009C6E3A /* ArticlesListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesListRequest.swift; sourceTree = "<group>"; };
+		580D47BF2781E224009C6E3A /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5881CE266759354C6D41B42C /* Pods-TheMostPopularAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostPopularAPITests.debug.xcconfig"; path = "Target Support Files/Pods-TheMostPopularAPITests/Pods-TheMostPopularAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E4A291B76EB9D2D68FD245 /* Pods-TheMostPopularAPI-TheMostPopularAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostPopularAPI-TheMostPopularAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TheMostPopularAPI-TheMostPopularAPIUITests/Pods-TheMostPopularAPI-TheMostPopularAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		675DB6326F066FE038413C83 /* Pods-TheMostPopularAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostPopularAPI.debug.xcconfig"; path = "Target Support Files/Pods-TheMostPopularAPI/Pods-TheMostPopularAPI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -342,6 +348,7 @@
 		580D477C2781D8B4009C6E3A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				580D47BE2781E219009C6E3A /* Articles */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -359,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				580D47B22781E140009C6E3A /* APIRequest.swift */,
+				580D47BA2781E203009C6E3A /* Articles */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -366,6 +374,7 @@
 		580D47802781D8E7009C6E3A /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				580D47B92781E1F1009C6E3A /* Articles */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -510,6 +519,30 @@
 				580D47B52781E16E009C6E3A /* AppDIContainer.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		580D47B92781E1F1009C6E3A /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				580D47B72781E1EF009C6E3A /* ArticlesAPI.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		580D47BA2781E203009C6E3A /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				580D47BB2781E203009C6E3A /* ArticlesListRequest.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		580D47BE2781E219009C6E3A /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				580D47BF2781E224009C6E3A /* Article.swift */,
+			);
+			path = Articles;
 			sourceTree = "<group>";
 		};
 		9633DD2BB73E701723250AE1 /* Frameworks */ = {
@@ -766,8 +799,10 @@
 			files = (
 				580D47902781DDB5009C6E3A /* FilterViewController.swift in Sources */,
 				580D47A72781DE49009C6E3A /* Texts+Filter.swift in Sources */,
+				580D47C02781E224009C6E3A /* Article.swift in Sources */,
 				580D47A92781DE49009C6E3A /* Texts+Global.swift in Sources */,
 				580D478A2781DA00009C6E3A /* AppCoordinator.swift in Sources */,
+				580D47BC2781E203009C6E3A /* ArticlesListRequest.swift in Sources */,
 				580D479C2781DE30009C6E3A /* CustomColor.swift in Sources */,
 				580D47912781DDB5009C6E3A /* FilterViewModel.swift in Sources */,
 				580D47B32781E140009C6E3A /* APIRequest.swift in Sources */,
@@ -775,6 +810,7 @@
 				580D47962781DE15009C6E3A /* Checkbox.swift in Sources */,
 				580D47662781D6DA009C6E3A /* Environment.swift in Sources */,
 				580D476F2781D820009C6E3A /* Coordinators.swift in Sources */,
+				580D47B82781E1EF009C6E3A /* ArticlesAPI.swift in Sources */,
 				580D472F2781D5DE009C6E3A /* AppDelegate.swift in Sources */,
 				580D47B62781E16E009C6E3A /* AppDIContainer.swift in Sources */,
 				580D47AE2781E0FF009C6E3A /* NetworkingService.swift in Sources */,
