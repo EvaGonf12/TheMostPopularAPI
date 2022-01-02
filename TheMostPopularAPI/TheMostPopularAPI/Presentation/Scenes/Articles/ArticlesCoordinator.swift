@@ -41,7 +41,19 @@ final class ArticlesCoordinator: Coordinator {
 extension ArticlesCoordinator: ArticlesListCoordinatorDelegate {
 
     func didSelect(article: Article) {
-        
+        let viewModel = ArticleDetailsViewModel(title: article.title,
+                                                link: article.url)
+        let viewController = ArticleDetailsViewController(viewModel: viewModel)
+        viewModel.coordinatorDelegate = self
+        viewModel.viewDelegate = viewController
+        presenter.pushViewController(viewController, animated: true)
+    }
+}
+
+// MARK: - ArticlesDetails
+extension ArticlesCoordinator: ArticleDetailsCoordinatorDelegate {
+    func goBack() {
+        presenter.popViewController(animated: true)
     }
 
 }

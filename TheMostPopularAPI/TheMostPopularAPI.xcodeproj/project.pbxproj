@@ -57,6 +57,8 @@
 		580D47ED2781E397009C6E3A /* ArticlesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47E82781E397009C6E3A /* ArticlesListViewModel.swift */; };
 		580D47EF2781E39C009C6E3A /* ArticlesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47EE2781E39C009C6E3A /* ArticlesCoordinator.swift */; };
 		580D47F22781E3BA009C6E3A /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47F12781E3BA009C6E3A /* Coordinators.swift */; };
+		580D47F62781E62B009C6E3A /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47F42781E62B009C6E3A /* ArticleDetailsViewController.swift */; };
+		580D47F72781E62B009C6E3A /* ArticleDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D47F52781E62B009C6E3A /* ArticleDetailsViewModel.swift */; };
 		76BF4E1002645B9980B5C0BF /* Pods_TheMostPopularAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9258030B3AC582DF6B35DD92 /* Pods_TheMostPopularAPITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		580D47E82781E397009C6E3A /* ArticlesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesListViewModel.swift; sourceTree = "<group>"; };
 		580D47EE2781E39C009C6E3A /* ArticlesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCoordinator.swift; sourceTree = "<group>"; };
 		580D47F12781E3BA009C6E3A /* Coordinators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		580D47F42781E62B009C6E3A /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
+		580D47F52781E62B009C6E3A /* ArticleDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewModel.swift; sourceTree = "<group>"; };
 		5912A5917B0D1833B5A25D69 /* Pods_TheMostPopularAPI_TheMostPopularAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMostPopularAPI_TheMostPopularAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		604918E36ABA73A2A35E5A77 /* Pods-TheMostPopularAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostPopularAPITests.release.xcconfig"; path = "Target Support Files/Pods-TheMostPopularAPITests/Pods-TheMostPopularAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		7773F2F7647592A86CF8E431 /* Pods-TheMostPopularAPI-TheMostPopularAPIUITests.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMostPopularAPI-TheMostPopularAPIUITests.develop.xcconfig"; path = "Target Support Files/Pods-TheMostPopularAPI-TheMostPopularAPIUITests/Pods-TheMostPopularAPI-TheMostPopularAPIUITests.develop.xcconfig"; sourceTree = "<group>"; };
@@ -666,6 +670,7 @@
 			children = (
 				580D47EE2781E39C009C6E3A /* ArticlesCoordinator.swift */,
 				580D47E22781E397009C6E3A /* List */,
+				580D47F32781E62B009C6E3A /* Details */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -696,6 +701,15 @@
 				580D47F12781E3BA009C6E3A /* Coordinators.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		580D47F32781E62B009C6E3A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				580D47F42781E62B009C6E3A /* ArticleDetailsViewController.swift */,
+				580D47F52781E62B009C6E3A /* ArticleDetailsViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		850CEA6A9F517669ED886CB2 /* Frameworks */ = {
@@ -951,6 +965,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580D47F72781E62B009C6E3A /* ArticleDetailsViewModel.swift in Sources */,
 				580D47C92781E2C3009C6E3A /* DefaultArticlesRepository.swift in Sources */,
 				580D47D42781E2EF009C6E3A /* Mappable.swift in Sources */,
 				580D47E02781E36F009C6E3A /* DefaultArticlesListUseCase.swift in Sources */,
@@ -965,6 +980,7 @@
 				580D479C2781DE30009C6E3A /* CustomColor.swift in Sources */,
 				580D47C82781E2C3009C6E3A /* ArticlesListRemoteToEntityMapper.swift in Sources */,
 				580D47DC2781E35A009C6E3A /* AppDIContainer+Articles.swift in Sources */,
+				580D47F62781E62B009C6E3A /* ArticleDetailsViewController.swift in Sources */,
 				580D47CF2781E2D2009C6E3A /* ArticlesRepository.swift in Sources */,
 				580D47DD2781E35A009C6E3A /* ArticlesDIContainer.swift in Sources */,
 				580D47912781DDB5009C6E3A /* FilterViewModel.swift in Sources */,
