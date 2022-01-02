@@ -293,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				580D47F02781E3BA009C6E3A /* Coordinators */,
-				580D47B42781E162009C6E3A /* Dependencies */,
+				580D47B42781E162009C6E3A /* AppDependencies */,
 				580D47DE2781E36F009C6E3A /* UseCases */,
 			);
 			path = Application;
@@ -548,13 +548,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		580D47B42781E162009C6E3A /* Dependencies */ = {
+		580D47B42781E162009C6E3A /* AppDependencies */ = {
 			isa = PBXGroup;
 			children = (
 				580D47B52781E16E009C6E3A /* AppDIContainer.swift */,
 				580D47D82781E35A009C6E3A /* DIContainer */,
 			);
-			path = Dependencies;
+			path = AppDependencies;
 			sourceTree = "<group>";
 		};
 		580D47B92781E1F1009C6E3A /* Articles */ = {
@@ -1203,7 +1203,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hawaa.TheMostPopularAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1233,7 +1233,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hawaa.TheMostPopularAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1406,7 +1406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = eu.hawaa.TheMostPopularAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
