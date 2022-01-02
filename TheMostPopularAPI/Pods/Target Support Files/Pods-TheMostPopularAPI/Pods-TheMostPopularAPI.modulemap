@@ -1,0 +1,6 @@
+framework module Pods_TheMostPopularAPI {
+  umbrella header "Pods-TheMostPopularAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

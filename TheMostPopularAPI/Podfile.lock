@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Kingfisher (6.3.1)
+  - RxSwift (6.2.0)
+  - SnapKit (5.0.1)
+  - Sourcery (1.6.1):
+    - Sourcery/CLI-Only (= 1.6.1)
+  - Sourcery/CLI-Only (1.6.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, branch `version6-xcode13`)
+  - RxSwift
+  - SnapKit
+  - Sourcery
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxSwift
+    - SnapKit
+    - Sourcery
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: 5ecd8df18f1750efaa57d1b9623090156da01ef3
+    :git: https://github.com/onevcat/Kingfisher.git
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Sourcery: f3759f803bd0739f74fc92a4341eed0473ce61ac
+
+PODFILE CHECKSUM: 600da307e6839e96c9d314b45f7b4d25a7a78cd6
+
+COCOAPODS: 1.11.2
