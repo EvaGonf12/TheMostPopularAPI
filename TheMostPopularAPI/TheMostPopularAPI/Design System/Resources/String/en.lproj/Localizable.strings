@@ -1,0 +1,11 @@
+
+
+// GLOBAL
+"global_day" = "day";
+"global_days" = "days";
+
+// FILTER
+"filter_title" = "Filters";
+"filter_type" = "Select type";
+"filter_interval" = "Select interval";
+"filter_source" = "Select source (optional)";

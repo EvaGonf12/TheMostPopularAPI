@@ -1,0 +1,10 @@
+
+// GLOBAL
+"global_day" = "día";
+"global_days" = "días";
+
+// FILTER
+"filter_title" = "Filtros";
+"filter_type" = "Selecciona el tipo";
+"filter_interval" = "Selecciona intervalo de tiempo";
+"filter_source" = "Selecciona la fuente (opcional)";
