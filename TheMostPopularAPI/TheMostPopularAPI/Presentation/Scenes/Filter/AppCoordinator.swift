@@ -9,6 +9,11 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    // Dependency
+    lazy var appDIContainer: AppDIContainer = {
+        return AppDIContainer()
+    }()
+    
     // MARK: - PRESENTER
     lazy var presenter: UINavigationController = {
         let presenter = UINavigationController()
@@ -45,6 +50,11 @@ extension AppCoordinator {
 extension AppCoordinator: FilterCoordinatorDelegate {
     
     func applyFilters(_ filters: FiltersSelected) {
+        let articlesCoordinator = ArticlesCoordinator(filters: filters,
+                                                      presenter: presenter,
+                                                      articlesDIContainer: appDIContainer.makeArticlesSceneDIContainer())
         
+        addChildCoordinator(articlesCoordinator)
+        articlesCoordinator.start()
     }
 }
