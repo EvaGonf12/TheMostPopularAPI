@@ -1,9 +1,3 @@
-//
-//  FilterViewModel.swift
-//  TheMostPopularAPI
-//
-//  Created by Eva Gonzalez Ferreira on 30/12/21.
-//
 
 import Foundation
 import RxSwift
@@ -32,8 +26,13 @@ class FilterViewModel {
         viewDelegate?.setupUI()
     }
     
-    func applyFilter(type: ArticleType, interval: ArticlesInterval, articleSource: [MostSharedSource]) {
-        let filters = FiltersSelected(articleType: type, interval: interval, mostSharedSource: articleSource)
+    func applyFilter(type: ArticleType,
+                     interval: ArticlesInterval,
+                     articleSource: [MostSharedSource]) {
+        
+        let filters = FiltersSelected(articleType: type,
+                                      interval: interval,
+                                      mostSharedSource: articleSource)
         coordinatorDelegate?.applyFilters(filters)
     }
 }
