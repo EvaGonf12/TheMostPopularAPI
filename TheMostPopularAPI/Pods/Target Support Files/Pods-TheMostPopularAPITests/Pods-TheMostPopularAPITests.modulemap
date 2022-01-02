@@ -1,0 +1,6 @@
+framework module Pods_TheMostPopularAPITests {
+  umbrella header "Pods-TheMostPopularAPITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
