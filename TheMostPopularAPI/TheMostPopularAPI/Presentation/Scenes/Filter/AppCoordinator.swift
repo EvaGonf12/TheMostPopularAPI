@@ -34,7 +34,17 @@ class AppCoordinator: Coordinator {
 extension AppCoordinator {
     
     func presentFilter() {
-        let viewController = ViewController()
+        let viewModel = FilterViewModel()
+        let viewController = FilterViewController(viewModel: viewModel)
+        viewModel.coordinatorDelegate = self
+        viewModel.viewDelegate = viewController
         presenter.pushViewController(viewController, animated: true)
+    }
+}
+
+extension AppCoordinator: FilterCoordinatorDelegate {
+    
+    func applyFilters(_ filters: FiltersSelected) {
+        
     }
 }
